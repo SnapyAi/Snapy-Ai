@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@radix-ui/react-use-controllable-state@1.1.0) es2022 production */
+import*as t from"/stable/react@18.3.1/es2022/react.mjs";import{useCallbackRef as f}from"/v135/@radix-ui/react-use-callback-ref@1.1.0/es2022/react-use-callback-ref.mjs";function m({prop:e,defaultProp:a,onChange:s=()=>{}}){let[n,o]=R({defaultProp:a,onChange:s}),c=e!==void 0,i=c?e:n,r=f(s),d=t.useCallback(l=>{if(c){let u=typeof l=="function"?l(e):l;u!==e&&r(u)}else o(l)},[c,e,o,r]);return[i,d]}function R({defaultProp:e,onChange:a}){let s=t.useState(e),[n]=s,o=t.useRef(n),c=f(a);return t.useEffect(()=>{o.current!==n&&(c(n),o.current=n)},[n,o,c]),s}export{m as useControllableState};
+//# sourceMappingURL=react-use-controllable-state.mjs.map
